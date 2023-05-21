@@ -47,7 +47,7 @@ jobs:
           run_id:  ${{ steps.aml_run.outputs.run_id }}
           experiment_name: ${{ steps.aml_run.outputs.experiment_name }}
 
-     Deploy model in Azure Machine Learning to ACI
+    # Deploy model in Azure Machine Learning to ACI
     - name: Deploy model
       id: aml_deploy
       uses: Azure/aml-deploy@v1
